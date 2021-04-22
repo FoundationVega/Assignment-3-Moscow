@@ -107,7 +107,7 @@ The file `main.m` will be divided as follows:
   
 ## Notes ⚠️
 
-**Write your assignment code following the instructions given in  `main.m`**.
+**Write your assignment code following the instructions given in  `main.py`**.
 
 Please *avoid creating unnecessary scripts/function files*, as this makes the code harder to grasp in its entirety.
 
