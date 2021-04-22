@@ -97,15 +97,10 @@ The file `main.m` will be divided as follows:
 	- *Task 10* : Generalize LDA, QDA, GNB to the case of two features. Report their training/LOOCV errors for the stadard threshold C=1/2, plot. Compare all the classifiers via plotting their ROC curves and computing the area under ROC (AUC).
 	
 	
-4. **Part IV: Binary Classification with Many Features**: 
-	
-	- *Task 11* : 4 features LDA classifier, training/LOOCV errors.
+4. **Part IV: 3-Classes Classification with Many Features**: 
 	
 	
-4. **Part V: 3-Classes Classification with Many Features**: 
-	
-	
-	- *Task 12* : QDA classifier with 3 classes, training/LOOCV errors.
+	- *Task 11* : QDA classifier with 3 classes, training/LOOCV errors.
 	
 
 	
