@@ -63,11 +63,11 @@ Each function file contains the necessary instructions and starter code.
 
 The file `main.m` will be divided as follows:
 	
-1. **Part I: Load Data**.
+   **Load Data**.
 
 	- Load the `wine.csv` dataset and select two types (classes) of wine.
 
-2. **Part II: Binary Classification with One Feature (d=1)**:
+1. **Part I: Binary Classification with One Feature (d=1)**:
 
 	- *Task 0* : To better visualize the nature of the dataset, create a plot of the feature.
 	
@@ -92,12 +92,12 @@ The file `main.m` will be divided as follows:
 	- DRAW CONCLUSIONS ABOUT THE PERFORMANCE OF THE CLASSIFIERS
 
 
-3. **Part III: Binary Classification with Two Features**: 
+2. **Part III: Binary Classification with Two Features**: 
 	
 	- *Task 10* : Generalize LDA, QDA, GNB to the case of two features. Report their training/LOOCV errors for the stadard threshold C=1/2, plot. Compare all the classifiers via plotting their ROC curves and computing the area under ROC (AUC).
 	
 	
-4. **Part IV: 3-Classes Classification with Many Features**: 
+3. **Part IV: 3-Classes Classification with Many Features**: 
 	
 	
 	- *Task 11* : QDA classifier with 3 classes, training/LOOCV errors.
