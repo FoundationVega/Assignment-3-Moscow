@@ -37,7 +37,7 @@
 % 	
 %         13
 %     
-%% Part I: Load Data ======================================================
+%% Load Data ======================================================
 
 %  Clear and Close Figures
 clear; close all; clc
@@ -76,7 +76,7 @@ end
 
 fprintf('Data succesfully loaded. \n')
 
-%% Part II: Binary Classification with One Feature ========================
+%% Part I: Binary Classification with One Feature ========================
 
 % Select only classes 1 and 3 for this part and feature 'Proanthocyanins'.
 % In this binary classification exercise assign label 0 to Class 1 and
@@ -206,7 +206,7 @@ hold off
 
 
 
-%% Part III: Binary Classification with Two Features ======================
+%% Part II: Binary Classification with Two Features ======================
 
 % Select only classes 1 and 3 for this part and features:
 %
@@ -226,7 +226,7 @@ featuresSet = dataset(indOfClasses, 1 + [indOfFeature_1, indOfFeature_2]);
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Task 10* : Generalize LDA, QDA, GNB to the case of two features. Report 
+% Task 10 : Generalize LDA, QDA, GNB to the case of two features. Report 
 % their training/LOOCV errors for the stadard threshold C=1/2, plot. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -242,45 +242,9 @@ featuresSet = dataset(indOfClasses, 1 + [indOfFeature_1, indOfFeature_2]);
 % Draw conclusions.
 
 
+%% Part III: 3-Classes Classification with Many Features ====================
 
-%% Part IV: Binary Classification with Many Features ======================
-
-% Select only classes 1 and 3 for this part and features:
-%
-%   - 'Alcohol'
-%   - 'Flavanoids'
-%   - 'Proanthocyanins'
-%   - 'Color intensity'
-%
-% In this binary classification exercise assign label 0 to Class 1 and
-% label 1 to Class 3.
-
-
-indOfClasses = indOfClass1 | indOfClass3;
-indOfFeature_1 = find(strcmp(descrX, 'Alcohol'));
-indOfFeature_2 = find(strcmp(descrX, 'Flavanoids'));
-indOfFeature_3 = find(strcmp(descrX, 'Proanthocyanins'));
-indOfFeature_4 = find(strcmp(descrX, 'Color intensity'));
-
-featuresSet = dataset(indOfClasses, 1+[indOfFeature_1, indOfFeature_2 ...
-                                        indOfFeature_3, indOfFeature_4]);
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Task 11 : Construct LDA classifier.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Compute the empirical value of the error using the 0-1 loss. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-%% Part V: 3-Classes Classification with Many Features ====================
-
-% Select only classes 1 and 3 for this part and features:
+% Select only classes 1, 2, and 3 for this part and features:
 %
 %   - 'Alcohol'
 %   - 'Flavanoids'
@@ -304,7 +268,7 @@ classLabels = [1,2,3];
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Task 12 : Construct QDA classifier for the following:
+% Task 11 : Construct QDA classifier for the following:
 %
 %   - 'Alcohol'
 %   - 'Alcohol' + 'Proanthocyanins'
