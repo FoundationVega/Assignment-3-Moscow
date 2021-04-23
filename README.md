@@ -38,8 +38,6 @@ The dataset is already provided in `wine.csv`:
 
 #### Preliminaries
 
-Please mind that it can be a good idea for those who work in Matlab to use Livescripts the way we do it in our tutorials.
-
 - Before starting with the main code, you will need to complete the following functions:
 	
     - `fit_lda`
@@ -56,7 +54,7 @@ Please mind that it can be a good idea for those who work in Matlab to use Lives
     
     - `compute_loss`
 
-Each function file contains the necessary instructions and starter code.
+There are detailed instructions and function templates in the main file.
 
 	
 #### Classification
@@ -98,7 +96,6 @@ The file `main.py` will be divided as follows:
 	
 	
 3. **Part III: 3-Classes Classification with Many Features**: 
-	
 	
 	- *Task 11* : QDA classifier with 3 classes, training/LOOCV errors.
 	
