@@ -28,7 +28,7 @@ def classify_lda(feature_set, mu_params, cov_params, pi_params, class_labels, th
         In the case of binary classification case pi_params should be a vector
         with two nonnegative values with sum = 1.
 
-        class_labels: labels assigned to featuresSet; groupSet will be labeled
+        class_labels: labels assigned to feature_set; group_set will be labeled
         with classLabels.
 
         threshold_value C: can be specified for the case of binary classification.
@@ -130,7 +130,7 @@ def classify_naive_bayes_gauss(feature_set, mu_params, cov_params, pi_params, cl
 
 def classify_qda(feature_set, mu_params, cov_params, pi_params, class_labels, threshold_value):
     """
-    Classify featuresSet according to QDA.
+    Classify feature_set according to QDA.
 
     Args:
         feature_set: variable where each row corresponds to an observation or replicate
@@ -154,7 +154,7 @@ def classify_qda(feature_set, mu_params, cov_params, pi_params, class_labels, th
         In the case of binary classification case pi_params should be a vector
         with two nonnegative values with sum = 1.
 
-        class_labels: labels assigned to featuresSet; group_set will be labeled
+        class_labels: labels assigned to feature_set; group_set will be labeled
         with class_labels.
 
         threshold_value C: can be specified for the case of binary classification.
@@ -236,7 +236,7 @@ def fit_lda(feature_set, group_set, class_labels):
         and each column corresponds to a feature or variable
 
         group_set: variable with each row representing a class label.
-        Each element of groupSet specifies the group of the corresponding row of
+        Each element of group_set specifies the group of the corresponding row of
         feature_set
 
         class_labels: provide the labels according to which we order the output
@@ -279,7 +279,7 @@ def fit_naive_bayes_gauss(feature_set, group_set, class_labels):
         and each column corresponds to a feature or variable
 
         group_set: variable with each row representing a class label.
-        Each element of groupSet specifies the group of the corresponding row of
+        Each element of group_set specifies the group of the corresponding row of
         feature_set
 
         class_labels: provide the labels according to which we order the output
@@ -329,7 +329,7 @@ def fit_qda(feature_set, group_set, class_labels):
         and each column corresponds to a feature or variable
 
         group_set: variable with each row representing a class label.
-        Each element of groupSet specifies the group of the corresponding row of
+        Each element of group_set specifies the group of the corresponding row of
         feature_set
 
         class_labels: provide the labels according to which we order the output
