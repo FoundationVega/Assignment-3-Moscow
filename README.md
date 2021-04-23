@@ -42,26 +42,26 @@ Please mind that it can be a good idea for those who work in Matlab to use Lives
 
 - Before starting with the main code, you will need to complete the following functions:
 	
-    - `fitLDA.m`
+    - `fit_lda`
 	
-    - `classifyLDA.m`
+    - `classify_lda`
     
-    - `fitQDA.m`
+    - `fit_qda`
     
-    - `classifyQDA.m`
+    - `classify_qda`
     
-    - `fitNaiveBayesGauss.m`
+    - `fit_naive_bayes_gauss`
     
-    - `classifyNaiveBayesGauss.m`
+    - `classify_naive_bayes_gauss`
     
-    - `computeLoss.m`
+    - `compute_loss`
 
 Each function file contains the necessary instructions and starter code.
 
 	
 #### Classification
 
-The file `main.m` will be divided as follows:
+The file `main.py` will be divided as follows:
 	
    **Load Data**.
 
