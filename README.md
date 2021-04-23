@@ -30,9 +30,9 @@ Taken from: Forina, M. et al, PARVUS. **Institute of Pharmaceutical and Food Ana
 
 The dataset is already provided in `wine.csv`:
 		
-	- Column **1**: class labels.
+- Column **1**: class labels.
 		
-	- Columns **2-14**: features.
+- Columns **2-14**: features.
 
 ## Tasks 📝
 
@@ -61,9 +61,9 @@ There are detailed instructions and function templates in the main file.
 
 The file `main.py` will be divided as follows:
 	
-   **Load Data**.
+**Load Data**.
 
-	- Load the `wine.csv` dataset and select two types (classes) of wine.
+- Load the `wine.csv` dataset and select two types (classes) of wine.
 
 1. **Part I: Binary Classification with One Feature (d=1)**:
 
